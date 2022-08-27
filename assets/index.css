@@ -8,10 +8,130 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
+}
+
+.instruction h1 {
+    margin-bottom: 16px;
+    text-transform: capitalize;
+    font-size: 36px;
+}
+
+.instruction p {
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: rgb(1, 6, 25);
+}
+
+.instruction span {
+    cursor: pointer;
+}
+
+.instruction span:hover {
+    text-decoration: underline;
+    color: rgb(12, 41, 116);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.piano {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.piano img {
+    z-index: 1;
+}
+
+.hint {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(152, 0, 0);
+}
+
+
+
+.do {
+    bottom: 10px;
+    left: 20px;
+}
+
+.re {
+    bottom: 10px;
+    left: 120px;
+}
+
+.mi {
+    bottom: 10px;
+    left: 210px;
+}
+
+.fa {
+    bottom: 10px;
+    left: 300px;
+}
+
+.sol {
+    bottom: 10px;
+    left: 390px;
+}
+
+.la {
+    bottom: 10px;
+    left: 480px;
+}
+
+.si {
+    bottom: 10px;
+    left: 570px;
+}
+
+.dohi {
+    bottom: 10px;
+    left: 670px;
+}
+
+.chord-table {
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(35, 127, 143);
+    margin: 20px 20px;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+span {
+    cursor: pointer;
+}
+
+
+.show-hint {
+    display: block;
 }
